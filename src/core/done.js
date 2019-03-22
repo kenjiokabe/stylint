@@ -75,7 +75,7 @@ var done = function() {
 	// else there's no more to do, so exit the process
 	if ( !this.state.watching ) {
 		this.callback( this.state.exitCode || null )
-		return process.exit( this.state.exitCode )
+		// return process.exit( this.state.exitCode )
 	}
 
 	var returnValue = {
